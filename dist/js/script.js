@@ -16,8 +16,13 @@ window.onload = () => {
     
     function addPoint () {
 
-        // берет текст из поля ввода
         let text = input.value.trim();
+        let points = document.querySelectorAll('.point'); 
+        
+        // Убирает выделенность, если пункт выбран, но решили добавить новый пункт
+        for (let i = 0; i < points.length; i++) {
+            points[i].classList.remove('point_checked');            
+        }        
 
         // проверка на пустые строки
         if (text !== '') {
@@ -63,9 +68,9 @@ window.onload = () => {
         
     };
  
-    function removeClass () {
-        
-        let checkList = document.querySelectorAll('.checkbox');
+    function removeClass () {   
+
+        let checkList = document.querySelectorAll('.checkbox');     
         
         for (let i = 0; i < checkList.length; i++) {
 
