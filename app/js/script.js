@@ -55,8 +55,8 @@ window.onload = () => {
         // ищет где было событие
         let target = event.target;
         // отметает все варианты, кроме чекбокса
-        if (target.classList == 'checkbox') {
-            
+            if (target.classList.contains('checkbox')) {    
+
             // добавляет или убирает класс к пункту        
             if (!target.checked) {
                 target.parentNode.classList.remove('point_checked');
