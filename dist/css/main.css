@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  background-color: #dadada;
+  margin-top: 5px;
+  font-family: 'Rubik', sans-serif; }
+  .todo h1 {
+    text-align: center;
+    color: white;
+    background-color: #363636;
+    padding: 10px; }
+  .todo .toDoList {
+    width: auto;
+    min-height: 250px;
+    max-height: 500px;
+    overflow-y: auto; }
+    .todo .toDoList .point {
+      display: flex;
+      padding: 15px; }
+      .todo .toDoList .point .number {
+        margin-right: 5px; }
+      .todo .toDoList .point .text {
+        border-right: 1px solid black;
+        flex-grow: 100; }
+      .todo .toDoList .point .checkbox {
+        margin-left: auto;
+        margin: 0 5px;
+        padding-left: 10px; }
+  .todo .footer {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #363636;
+    padding: 15px; }
+    .todo .footer input {
+      width: 40%;
+      margin-right: 5px; }
+    .todo .footer .remove {
+      margin-left: auto; }
+
+.point_checked {
+  background-color: #1f9e29; }
